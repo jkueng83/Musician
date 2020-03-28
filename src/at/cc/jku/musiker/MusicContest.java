@@ -19,7 +19,6 @@ public class MusicContest {
             if (musicianWinner.getMySound().length() < this.musicians.get(i).getMySound().length()) { //der wo länger singt
                 musicianWinner = musicians.get(i);
             }
-
         }
         System.out.println("###########################");
         System.out.println("#### Der Gewinner ist: ####");
@@ -36,7 +35,6 @@ public class MusicContest {
         musician.printPersonData();
 
         musician.makeMusic();
-
 
     }
 

@@ -4,6 +4,7 @@ Beispiel aus Schrödinger Buch ab Seite 262
  */
 public class Proberaum {
     public static void main(String[] args) {
+
         Vocalist vocalist = new Vocalist("Klaus",27);
         Bassist bassist = new Bassist("Johannes", 36);
         Drummer drummer=new Drummer("Johannes" , 36);
@@ -21,6 +22,7 @@ public class Proberaum {
 
         makeMusic(vocalist,bassist,drummer,trumpeter,backgroundVocalist,guitarist);
 
+        // Musik Kontest
         MusicContest musicContest = new MusicContest("Musik Kontest");
 
         Musician m1 = new Musician("Johannes" , 35);
@@ -41,7 +43,6 @@ public class Proberaum {
         musicContest.addMusicians(backgroundVocalist);
         musicContest.addMusicians(guitarist);
 
-
         musicContest.printAllMusicians();
         musicContest.theWinnerIs();
 
@@ -60,17 +61,14 @@ public class Proberaum {
         voiceContest.addMusicians(v1);
         voiceContest.addMusicians(v1);
 
-
         voiceContest.theWinnerIs();
-
-
-
-
     }
 
     public static void makeMusic ( Musician ... gruppe){
+        System.out.println("#### Die Band macht Musik ####");
         for (Musician musician : gruppe){
             musician.makeMusic();
         }
+        System.out.println("--- Konzert beendet ---");
     }
 }
