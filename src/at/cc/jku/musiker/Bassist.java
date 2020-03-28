@@ -11,4 +11,9 @@ public class Bassist extends Musician {
         //super.makeMusic();
         System.out.println("Bass : Schrumm Schrumm ");
     }
+
+
+
+
+
 }

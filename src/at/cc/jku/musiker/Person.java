@@ -2,11 +2,11 @@ package at.cc.jku.musiker;
 
 public class Person {
     private String name;
-    private int alter;
+    private int age;
 
     public Person(String name, int alter) {
         this.name = name;
-        this.alter = alter;
+        this.age = alter;
     }
 
     public String getName() {
@@ -17,11 +17,16 @@ public class Person {
         this.name = name;
     }
 
-    public int getAlter() {
-        return alter;
+    public int getAge() {
+        return age;
     }
 
-    public void setAlter(int alter) {
-        this.alter = alter;
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void printPersonData(){
+        System.out.println("Name:\t\t\t\t" + this.name);
+        System.out.println("Alter:\t\t\t\t" + this.age);
     }
 }
